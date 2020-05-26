@@ -1,2 +1,2 @@
 # Booking-form
-a html CSS form for booking appointments, validate with vanilla JavaScript in app.js file, then validated with RegEX in Regex.js 
+a html CSS form for booking appointments, validated with vanilla JavaScript in the app.js file, then validated with RegEX in the Regex.js 
