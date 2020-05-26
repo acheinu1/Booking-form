@@ -1,0 +1,259 @@
+body{
+    
+    padding: 0;
+    margin: 0;
+}
+#seat{
+    height: 100vh;
+    background: #aa076b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa076b, #61045f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa076b, #61045f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #seat .seatpic{
+    background: rgba(0, 0, 0, 0.561);
+    background-image: url("../images/chair1.png");
+    background-size: contain;
+    /* padding: 40px; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    width: 50%;
+    /* order: 1; */
+  }
+
+  .APPform{
+    background: rgba(0, 0, 0, 0.774);
+    width: 50%;
+    height: 100vh;
+    
+    box-sizing: content-box;
+  }
+
+  .APPform h2{
+    line-height: 0px;
+    color: azure;
+    text-align: center;
+    margin: 5% auto;
+    font-size: 35px;
+  }
+  form{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  /* used flex to arrange the labels and input */
+  .flexparent{
+    display: flex;
+    justify-content: center;
+  }
+
+  label input, select,.formbtn{
+    border: 0;
+    margin-bottom: px;
+    display: block;
+    width: 420px;
+    background:none;
+    height: 30px; 
+    color: white;
+    text-indent: 15px;
+    border: white 2px solid;
+  }
+
+  label{
+    color: white;
+  }
+  option{
+    background-color: rgb(5, 5, 5);
+    font-size: 15px;
+  }
+  input[type="submit"]{
+    position: absolute;
+    color: white;
+    background-color: black;
+    border: 3px white solid;
+    padding: 22px 20px;
+    /* border-radius: 8px; */
+    cursor: pointer;
+    outline: none;
+    /* padding: -20px 0; */
+    text-transform: uppercase;
+    margin-top: 1%;
+}
+input[type="submit"]:hover{
+    background-color:#aa076b;
+}
+  /* ===========media queries for seat section=============== */
+
+@media screen and (max-width: 1024px) {
+
+    #seat{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      height: 40em;
+      text-align: start;
+    }
+    #seat .seatpic{
+      width: 50%;
+      /* background-image: url("../images/chair1.png"); */
+      background-size: contain;
+      background-position: center;
+      height: 42em;
+      margin: 0px 10%px;
+     
+    }
+    
+    .APPform{
+      background: rgba(0, 0, 0, 0.774);
+      width: 50%;
+      height: 43em;
+    }
+    .APPform h2{
+      font-size: 17px;
+      margin-bottom: -30px;
+      line-height: 40px;
+      margin-top: 30px;
+      color: azure;
+      text-align: center;
+  }
+    
+
+    label input, select,.formbtn{
+      border: 0;
+      margin-bottom: 3px;
+      display: block;
+      width: 20em;
+      height: 25px; 
+      color: white;
+      text-indent: 15px;
+      border: white 2px solid;
+    }
+
+    form{
+      position: relative;
+      top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  #seat{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 40em;
+    text-align: start;
+  }
+  #seat .seatpic{
+    width: 50%;
+    background-image: url("../images/seatmd1.png");
+    background-size: contain;
+    background-position: center;
+    height: 48em;
+    margin: 0px 10%px;
+   
+  }
+  
+  .APPform{
+    background: rgba(0, 0, 0, 0.774);
+    width: 50%;
+    height: 90vh;
+    
+  }
+  .APPform h2{
+    font-size: 17px;
+    margin-bottom: -30px;
+    line-height: 40px;
+    color: azure;
+    text-align: center;
+  }
+
+  label input, select,.formbtn{
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 20em;
+    height: 25px; 
+    color: white;
+    text-indent: 15px;
+    border: white 2px solid;
+  }
+
+  form{
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; */
+    top: 10%;
+  }
+
+  #flipcontainer {
+    font-size:25px;
+    font-weight:bold;
+    padding-top:190px;  
+    height: 8px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 567px){
+  .APPform h2{
+    line-height: 0px;
+    font-size: 18px;
+    /* text-align: start; */
+    padding-bottom: 14%;
+  }
+  #seat{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 65em;
+    text-align: start;
+  }
+  #seat .seatpic{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 25em;
+    margin: 0px 0px;
+    padding:0px 0px;
+  }
+  .APPform{
+    background: rgba(0, 0, 0, 0.774);
+    width: 100%;
+    height: 100vh;
+    /* height: 43em; */
+    /* padding-top: 10%; */
+  }
+
+  label input, select,.formbtn{
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 25em;
+    height: 25px; 
+    color: white;
+    text-indent: 15px;
+    border: white 2px solid;
+  }
+
+  form{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  
+}
+  /* =================end of media queries for seat section */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section id="seat">
+        <div class="seatpic">
+             <!-- <h2> come have a seat </h2> -->
+             
+        </div>
+        <div class="APPform">
+         <a name="book"></a>
+            <h2>Book Appointment with us</h2>
+             <div class="flexparent">
+                 <form name="Appointment" onsubmit="return submitForm()">
+                 <label for="name">NAME:<input type="text" id="fname" name="inputName"> <br>
+                 <label for="PNUMBER">PHONE NUMBER: <input type="number" id="PN" name="inputPN"></label> <br>
+                 <label for="name">EMAIL:<input type="email" id="Mail" name="inputEmail"></label> <br>
+                 <label for="name">BOOK DATE:<input type="date" id="BKdate" name="inputDate"></label> <br>
+                 <label for="name">BOOK TIME:<input type="time" id="BKtime" name="inputTime"></label> <br>
+                 <label for="Service">SERVICES:
+                         <select id="SForm" name="servicelist"> <span></span>
+                             <option value="Haircut">Haircut</option>
+                             <option value="Carving">Carving</option>
+                             <option value="Shaving">Shaving</option>
+                             <option value="Manicure">Manicure & Pedicure</option>
+                             <option value="Manicure">Massage</option>
+                         </select>
+                     </label> 
+                     <!-- <button class="formbtn">SUBMIT</button> -->
+                     <input type="submit" value="Book Appointment">
+                 </form>
+         </div> 
+        </div>
+     </section>
+     <script src="assets/js/jquery-3.5.0.min.js"></script>
+     <script src="assets/js/regex.js"></script>
+</body>
+</html>
